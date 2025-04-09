@@ -2,6 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
+    <div className="relative h-full w-full [&>div]:absolute [&>div]:inset-0 
+    dark:[&>div]:bg-[radial-gradient(circle_800px_at_50%_200px,#110f69,transparent)]
+    [&>div]:bg-[radial-gradient(circle_800px_at_50%_200px,#00bfff,transparent)]">
     <div className="grid grid-rows-[20px_1fr_auto] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <div className="text-center">
         <h1 className="text-5xl text-center font-extrabold dark:text-white">
@@ -13,7 +16,7 @@ export default function Home() {
       </div>
       <div className="m-9 justify-items-center">
         <Image
-          className="rounded-full w-50 h-50 object-cover md:w-64 md:h-64 mb-5 border-1 border-solid border-transparent bg-black dark:bg-gray-600 p-2"
+          className="shadow-lg/40 rounded-full w-50 h-50 object-cover md:w-64 md:h-64 mb-5 border-1 border-solid border border-black bg-white dark:bg-purple-900 p-2"
           src={"/images/profile.jpg"}
           width={800}
           height={800}
@@ -21,7 +24,7 @@ export default function Home() {
         />
 
         <div>
-          <span className="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-lg me-2 dark:bg-gray-700 dark:text-gray-400 border border-gray-700 ">
+          <span className="shadow-lg/40 bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-lg me-2 dark:bg-purple-900 dark:text-gray-400 border border-gray-700 ">
             <svg
               className="w-6 h-6 text-gray-800 dark:text-white"
               aria-hidden="true"
@@ -48,7 +51,7 @@ export default function Home() {
             </svg>
             Dublin, Ireland
           </span>
-          <span className="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-lg me-2 dark:bg-gray-700 dark:text-gray-400 border border-gray-700 ">
+          <span className="shadow-lg/40 bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-lg me-2 dark:bg-purple-900 dark:text-gray-400 border border-gray-700 ">
             <svg
               className="mr-1 w-6 h-6 text-gray-800 dark:text-white"
               aria-hidden="true"
@@ -71,15 +74,15 @@ export default function Home() {
           </span>
 
           <div className="relative my-10">
-            <hr className="border-t-2 text-black dark:text-gray-700" />
-            <span className="absolute rounded-lg left-1/2 transform -translate-x-1/2 -top-3 bg-black dark:bg-gray-700 px-4 text-white dark:text-gray-400">
+            <hr className="shadow-lg/40 border-t-2 text-black dark:text-gray-700" />
+            <span className="shadow-lg/40 absolute rounded-lg left-1/2 transform -translate-x-1/2 -top-3 bg-black dark:bg-gray-700 px-4 text-white dark:text-gray-400">
               Social Media
             </span>
           </div>
           <div className="w-full h-auto  flex items-center justify-center gap-2 flex-wrap">
             <a
               href="https://www.linkedin.com/in/adam-elliott-4b8526166/"
-              className="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100 hover:text-black"
+              className="shadow-lg/40 p-2 rounded-lg flex items-center border dark:border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100 hover:text-black"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -91,8 +94,8 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href="javascript:;"
-              className="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100 hover:text-black"
+              href="https://github.com/adamlukeelliott"
+              className="shadow-lg/40 p-2 rounded-lg flex items-center border dark:border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100 hover:text-black"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +109,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
