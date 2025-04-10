@@ -1,4 +1,3 @@
-import Image from "next/image";
 import PasswordForm from '@/app/password-checker/password-check';
 
 export default function Home() {

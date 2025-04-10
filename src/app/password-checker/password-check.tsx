@@ -12,23 +12,22 @@ const PasswordForm = () => {
     password: "",
   });
 
-  var score = 0;
+  const [score, setScore] = useState<number>(0);
   const [widthClass, setWidthClass] = useState<string>("w-0");
   const [strengthText, setStrengthText] = useState<string>("");
 
   useEffect(() => {
-    score = zxcvbn(formData.password).score;
+    setScore(zxcvbn(formData.password).score);
     if (score > 0) {
       setWidthClass(`w-${score}/4`);
       setStrengthText(getStrengthTextString(score));
-      console.log(widthClass);
     } else {
       setWidthClass("w-0");
       setStrengthText("");
     }
   }, [formData]);
 
-  function getStrengthTextString(score: any): string {
+  function getStrengthTextString(score: number): string {
     switch (score) {
       case 1: return "Weak";
       case 2: return "Moderate";
