@@ -79,6 +79,7 @@ export default function Home() {
               Social Media
             </span>
           </div>
+
           <div className="w-full h-auto  flex items-center justify-center gap-2 flex-wrap">
             <a
               href="https://www.linkedin.com/in/adam-elliott-4b8526166/"
@@ -108,6 +109,26 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        <div className="relative my-10">
+          <hr className="shadow-lg/40 border-t-2 text-black dark:text-gray-700" />
+          <span className="shadow-lg/40 absolute rounded-lg left-1/2 transform -translate-x-1/2 -top-3 bg-black dark:bg-gray-700 px-4 text-white dark:text-gray-400">
+            Demos
+          </span>
+        </div>
+
+        <div className="mt-8 w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-purple-900 dark:border-gray-600 dark:text-white">
+          <a href="/password-checker" className="text-center block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-purple-700 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white transition-all rounded-t-lg">
+            Password Checker
+          </a>
+          <a href="#" className="text-center transition-all block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-purple-700 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+            Coming Soon...
+          </a>
+          <a href="#" className="text-center transition-all block w-full px-4 py-2 rounded-b-lg cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-purple-700 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+          Coming Soon...
+          </a>
+        </div>
+
       </div>
     </div>
     </div>
