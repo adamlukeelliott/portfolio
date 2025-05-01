@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Adam Elliott - Software Engineer",
-  description: "Online portfolio for Adam Elliott, an Ireland based software engineer.",
+  description: "Online portfolio for Adam Elliott, a Fullstack Software Engineer based in Dublin, Ireland.",
 };
 
 export default function RootLayout({
