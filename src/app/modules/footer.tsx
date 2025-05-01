@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="w-full h-auto flex items-center justify-center gap-2 flex-wrapflex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
           <a
             href="https://www.linkedin.com/in/adam-elliott-4b8526166/"
-            className="shadow-lg/40 p-2 rounded-lg flex items-center border dark:border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100 hover:text-black"
+            className="shadow-lg/40 p-2 rounded-lg flex items-center border dark:border-gray-300 justify-center transition-all duration-500 dark:hover:border-gray-100 hover:bg-gray-100 hover:text-black"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ export default function Footer() {
           </a>
           <a
             href="https://github.com/adamlukeelliott"
-            className="shadow-lg/40 p-2 rounded-lg flex items-center border dark:border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100 hover:text-black"
+            className="shadow-lg/40 p-2 rounded-lg flex items-center border dark:border-gray-300 justify-center transition-all duration-500 dark:hover:border-gray-100 hover:bg-gray-100 hover:text-black"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
