@@ -42,10 +42,10 @@ export default function Home() {
         </div>
         <form onSubmit={handleSubmit} className="flex flex-col items-center mt-5">
           <label htmlFor="email" className="text-xl">E-Mail:</label>
-          <input type="text" name="email" onChange={handleChange} className="bg-gray-700 p-1 border border-none rounded-md w-[90%] lg:w-[50%]"></input><br/>
+          <input required pattern="[^ @]*@[^ @]*" type="text" name="email" onChange={handleChange} className="dark:bg-gray-700 p-1 border-gray-400 border dark:border-none rounded-md w-[90%] lg:w-[50%]"></input><br/>
           <label htmlFor="message" className="text-xl">Message:</label>
-          <textarea name="message" onChange={handleChange} className="bg-gray-700 p-1 border border-none rounded-md w-[90%] lg:w-[50%] h-50"></textarea><br/>
-          <input type="submit" className="bg-transparent content-center border border-gray-400 rounded-md p-3 w-50"/>
+          <textarea required name="message" onChange={handleChange} className="dark:bg-gray-700 p-1 border border-gray-400 dark:border-none rounded-md w-[90%] lg:w-[50%] h-50"></textarea><br/>
+          <input type="submit" className="transition bg-transparent dark:hover:bg-gray-600 hover:bg-gray-200 content-center border border-gray-400 rounded-md p-3 w-50"/>
         </form>
       </Background>
       <Footer />
