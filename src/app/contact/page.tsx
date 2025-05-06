@@ -8,7 +8,7 @@ import { useState } from 'react';
 export default function Home() {
 
   const [form, setForm] = useState({ message: '', email: '' });
-  const [response, setResponse] = useState('');
+  const [, setResponse] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
