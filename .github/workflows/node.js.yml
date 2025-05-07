@@ -3,6 +3,9 @@
 
 name: Node.js CI
 
+env:
+  RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+
 on:
   push:
     branches: [ "main" ]
