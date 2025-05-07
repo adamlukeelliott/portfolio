@@ -16,7 +16,7 @@ export default function Home() {
     setForm(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const res = await fetch('/api/send', {
