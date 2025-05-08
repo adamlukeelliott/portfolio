@@ -36,7 +36,6 @@ export default function Home() {
 
       const data = await res.json();
       setResponse(`Server says: ${JSON.stringify(data.received)}`);
-      throw new Error("test");
     } catch {
       setSendError(true);
     } finally {
@@ -82,6 +81,7 @@ export default function Home() {
             An error has occured sending your message, please try again later.
           </h1>
         )}
+
         {contactVisible && (
           <>
             <div id="contact-form" className="text-center">
