@@ -1,7 +1,7 @@
 import Navbar from "../modules/navbar";
 import Footer from "../modules/footer";
 import Background from "../modules/background";
-import ContactForm from "@/app/contact/contact-form";
+import ContactForm from "../contact/contact-form"
 
 export const dynamic = 'force-dynamic';
 

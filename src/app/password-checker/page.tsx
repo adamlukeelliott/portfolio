@@ -1,4 +1,4 @@
-import PasswordForm from "@/app/password-checker/password-check";
+import PasswordForm from "../password-checker/password-check";
 import Navbar from "../modules/navbar";
 import Footer from "../modules/footer";
 import Background from "../modules/background";
